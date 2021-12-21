@@ -14,6 +14,8 @@ ENV \
 	harvester="false" \
 	keys="generate" \
 	log_level="INFO" \
+	outbound_peer_count="20" \
+	peer_count="20" \
 	plots_dir="/plots" \
 	testnet="false" \
 	TZ="UTC"
