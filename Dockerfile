@@ -7,18 +7,20 @@ ARG RELEASE
 
 # environment variables
 ENV \
-	farmer_address="null" \
+	CHIA_ROOT=/root/.chia/mainnet \
+	farmer_address= \
 	farmer="false" \
-	farmer_port="null" \
-	full_node_port="null" \
+	farmer_port= \
 	harvester="false" \
 	keys="generate" \
 	log_level="INFO" \
+	log_to_file="true" \
 	outbound_peer_count="20" \
 	peer_count="20" \
 	plots_dir="/plots" \
 	testnet="false" \
-	TZ="UTC"
+	TZ="UTC" \
+	upnp="true"
 
 # install dependencies
 RUN \
